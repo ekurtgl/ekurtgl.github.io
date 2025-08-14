@@ -64,6 +64,33 @@
         .resume-btn:hover {
             background-color: #EA580C;
         }
+        .image-row {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin-top: 8px;
+            /* justify-content: center;   keep images centered */
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-left: 8px;         /* prevent cropping left edge */
+            box-sizing: border-box;
+        }
+
+        .image-row img {
+            display: block;
+            height: 500px;
+            flex-shrink: 0; /* prevent shrinking that can cause weird clipping */
+        }
+
+        .orange-separator {
+            border: none;
+            height: 2px;               /* thickness */
+            background-color: #fb923c; /* Tailwind's orange-400 */
+            margin: 16px 0;            /* spacing above/below */
+        }
+
+
     </style>
 </head>
 <body class="antialiased">
@@ -94,19 +121,22 @@
         <nav class="mb-8">
             <ul class="flex flex-wrap border-b border-gray-700">
                 <li class="mr-1">
-                    <a class="inline-block py-2 px-4 font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer tab tab-active" data-tab="about">About Me</a>
+                    <a class="inline-block py-2 px-4 font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer tab tab-active" data-tab="about"> About Me </a>
                 </li>
                 <li class="mr-1">
-                    <a class="inline-block py-2 px-4 font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer tab" data-tab="experience">Experience</a>
+                    <a class="inline-block py-2 px-4 font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer tab" data-tab="experience"> Experience </a>
                 </li>
                  <li class="mr-1">
-                    <a class="inline-block py-2 px-4 font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer tab" data-tab="research">Research</a>
+                    <a class="inline-block py-2 px-4 font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer tab" data-tab="research"> Research 🔬 </a>
                 </li>
                 <li class="mr-1">
-                    <a class="inline-block py-2 px-4 font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer tab" data-tab="publications">Publications</a>
+                    <a class="inline-block py-2 px-4 font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer tab" data-tab="publications"> Publications </a>
                 </li>
                 <li class="mr-1">
-                    <a class="inline-block py-2 px-4 font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer tab" data-tab="awards">Honors & Awards</a>
+                    <a class="inline-block py-2 px-4 font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer tab" data-tab="awards"> Honors & Awards </a>
+                </li>
+                <li class="mr-1">
+                    <a class="inline-block py-2 px-4 font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer tab" data-tab="social"> Social </a>
                 </li>
             </ul>
         </nav>
@@ -213,15 +243,54 @@
                             <h3 class="text-xl font-semibold text-orange-400">University of Alabama | Computational Intelligence for Radar Lab</h3>
                             <p class="text-gray-400 text-sm mb-1">Graduate Research Assistant | 2019 - 2024</p>
                             <ul class="list-disc list-inside text-gray-300 space-y-1">
-                               <li>RF Sensing for Sign Language Driven Smart Environment.</li>
-                               <li>Extensive experience with Experiment design and raw data acquisition with multiple FMCW MIMO radars (TI's IWR1443, AWR1642, AWR2243 single and cascade chips, Infineon's BGT60TR13C, XeThru X4) and RGB-D sensors including (Kinect v2, Orbbec, Basler, FLIR).</li>
-                               <li>Designed Graphical User Interface (GUI) for simultaneous data acquisition from multiple sensors.</li>
-                               <li>Developed FMCW MIMO radar simulation with 250+ stars on GitHub.</li>
+                               <hr class="orange-separator">
+                               <li> Sign language-controlled Chess game with synchronous multi-modal (Video + RF) data acquisition and prediction. <a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/rsn2.12565" class="font-semibold text-orange-400"> [Paper] </a> </li>
+                                <div class="image-row">
+                                    <img src="assets/rsn1.jpg" alt="chess" height="200"/>
+                                    <img src="assets/rsn2.png" alt="chess" height="200"/>
+                                    <img src="assets/rsn3.png" alt="chess" height="200"/>
+                                </div>
+                               <!-- <img src="assets/rsn1.jpg" alt="RF Sensing for Sign Language Driven Smart Environment" class="w-full h-auto rounded-lg mb-4">
+                               <img src="assets/rsn2.png" alt="RF Sensing for Sign Language Driven Smart Environment" class="w-full h-auto rounded-lg mb-4"> -->
+                               <hr class="orange-separator">
+                               <li>Experiment design and raw data acquisition with multiple FMCW MIMO radars including:
+                                <ul style="list-style-type: disc; padding-left: 20px;">
+                                    <li>TI's IWR1443, AWR1642, AWR2243 single and cascade chips</li>
+                                    <li>Infineon's BGT60TR13C, XeThru X4</li>
+                                    <li>RGB-D sensors including (Kinect v2, Orbbec, Basler, FLIR).</li>
+                                </ul>
+                                <div class="image-row">
+                                    <img src="assets/cross1.png" alt="cross" height="200"/>
+                                    <img src="assets/cross2.png" alt="cross" height="200"/>
+                                </div>
+                               </li>
+                               <hr class="orange-separator">
+                               <li>Designed Graphical User Interface (GUI) for simultaneous data acquisition from multiple sensors. <a href="https://github.com/ekurtgl/AWR2243-Radar-GUI" class="font-semibold text-orange-400"> [Code] </a>
+                                <div class="image-row">
+                                    <img src="assets/awrgui.png" alt="awrgui" height="200"/>
+                                    <img src="assets/awrgui2.png" alt="awrgui" height="200"/>
+                                    <img src="assets/awrgui3.png" alt="awrgui" height="200"/>
+                                </div>
+                               </li>
+                               <hr class="orange-separator">
+                               <li>Developed FMCW MIMO radar simulation with 250+ stars on GitHub. <a href="https://github.com/ekurtgl/FMCW-MIMO-Radar-Simulation" class="font-semibold text-orange-400"> [Code] </a>
+                                <div class="image-row">
+                                        <img src="assets/simgif2.gif" alt="sim" height="200"/>
+                                        <img src="assets/simgif.gif" alt="sim" height="200"/>
+                                </div>
+                               </li>
                                <li>Real-time processing and classification of RF data.</li>
-                               <li>Automated temporal segmentation and sequential classification of RF data.</li>
+                               <hr class="orange-separator">
+                               <li>Automated temporal segmentation and sequential classification of RF data. <a href="https://arxiv.org/pdf/2111.05480" class="font-semibold text-orange-400"> [Paper] </a> <a href="https://github.com/ekurtgl/THMS-2021" class="font-semibold text-orange-400"> [Code] </a>
+                                <div class="image-row">
+                                        <img src="assets/thms1.png" alt="thms" height="200"/>
+                                        <img src="assets/thms2.png" alt="thms" height="200"/>
+                                        <img src="assets/thms3.png" alt="thms" height="200"/>
+                                </div>
+                               </li>
+                               <hr class="orange-separator">
                                <li>Researched deep neural network and Graph Neural Network design for ASL recognition with radar.</li>
-                               <li>Body and hand skeleton extraction and registration of them using RGB-D sensors.</li>
-                               <li>Developed sign language-controlled Chess game with synchronous multi-modal (Video + RF) data acquisition and prediction.</li>
+                               <li>Body and hand skeleton extraction and registration using RGB-D sensors.</li>
                             </ul>
                         </div>
                     </div>
