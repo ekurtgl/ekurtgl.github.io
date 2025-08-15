@@ -146,10 +146,13 @@
             <!-- About Me Section -->
             <section id="about" class="content-section active">
                 <div class="card rounded-lg p-6">
-                    <h2 class="text-2xl font-bold mb-4 text-white">About Me</h2>
-                    <p class="text-gray-300 mb-6">
-                        Hi!<br> I am Emre, and I am an ML researcher at The Rockefeller University. My background is focused on signal processing, computer vision, and fundamental ML/DL research. I have 5+ years of experience with end-to-end ML/DL including experiment design, real-world dataset curation, preprocessing, DL model design and training, evaluation, and deployment. I have also worked with signal processing and ML/DL applications of various sensors including FMCW radars, RGB-D/IR cameras, ECG, and iEEG. I am passionate about computer vision, health sensing, and fundamental ML research.
-                    </p>
+                    <!-- <h2 class="text-2xl font-bold mb-4 text-white">About Me</h2> -->
+                    <div class="flex items-start gap-4 mb-6">
+                        <img src="assets/profile.png" alt="Profile picture" class="w-64 h-64 object-cover rounded-lg">
+                        <p class="text-gray-300 mb-6">
+                            Hi!<br> I am Emre, and I am an ML engineer at The Rockefeller University. My research is focused on signal processing, computer vision, and fundamental ML/DL. I have 5+ years of experience with end-to-end ML/DL including experiment design, real-world dataset curation, preprocessing, DL model design and training, evaluation, and deployment. I have also worked with signal processing and ML/DL applications of various sensors including FMCW radars, RGB-D/IR cameras, ECG, and iEEG. I am passionate about computer vision, health sensing, and fundamental ML research.
+                        </p>
+                    </div>
 
                     <h3 class="text-xl font-semibold mb-3 text-white">Education</h3>
                     <ul class="list-disc list-inside text-gray-400 mb-6 space-y-2">
@@ -273,7 +276,7 @@
                                 </div>
                                </li>
                                <hr class="orange-separator">
-                               <li>Developed FMCW MIMO radar simulation with 250+ stars on GitHub. <a href="https://github.com/ekurtgl/FMCW-MIMO-Radar-Simulation" class="font-semibold text-orange-400"> [Code] </a>
+                               <li>Developed FMCW MIMO radar simulation with 250+ stars on GitHub. <a href="https://arxiv.org/abs/2508.07513v1" class="font-semibold text-orange-400"> [Report] </a> <a href="https://github.com/ekurtgl/FMCW-MIMO-Radar-Simulation" class="font-semibold text-orange-400"> [Code] </a>
                                 <div class="image-row">
                                         <img src="assets/simgif2.gif" alt="sim" height="200"/>
                                         <img src="assets/simgif.gif" alt="sim" height="200"/>
@@ -291,6 +294,17 @@
                                <hr class="orange-separator">
                                <li>Researched deep neural network and Graph Neural Network design for ASL recognition with radar.</li>
                                <li>Body and hand skeleton extraction and registration using RGB-D sensors.</li>
+                               <hr class="orange-separator">
+                               <li>Subspace projection-based multi-target resolution <a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/rsn2.12405" class="font-semibold text-orange-400"> [Paper] </a> <a href="https://github.com/ekurtgl/Angular_Projection" class="font-semibold text-orange-400"> [Code] </a>
+                                <div class="image-row">
+                                        <img src="assets/angle5.png" alt="angle" height="200"/>
+                                        <img src="assets/angle3.png" alt="angle" height="200"/>
+                                        <img src="assets/angle1.png" alt="angle" height="200"/>
+                                        <img src="assets/angle2.png" alt="angle" height="200"/>
+                                        <img src="assets/angle4.png" alt="angle" height="200"/>
+                                        <img src="assets/angle6.png" alt="angle" height="200"/>
+                                </div>
+                               </li>
                             </ul>
                         </div>
                     </div>
@@ -311,6 +325,7 @@
                         <div class="publication-item"><p class="text-gray-300">Evie A. Malaia, Joshua D. Borneman, <strong>Emre Kurtoglu</strong>, Sevgi Z. Gurbuz, Darrin Griffin, Chris Crawford, and Ali C. Gurbuz. "Complexity in sign languages". <em>Linguistics Vanguard</em>, 9(s1):121-131, 2023.</p></div>
                         <div class="publication-item"><p class="text-gray-300"><strong>Emre Kurtoglu</strong>, Sabyasachi Biswas, AC. Gurbuz and Sevgi Z. Gurbuz, "Boosting multi-target recognition performance with multi-input multi-output radar-based angular subspace projection and multi-view deep neural network" in <em>IET Radar, Sonar & Navigation</em>, 2023.</p></div>
                         <div class="publication-item"><p class="text-gray-300"><strong>Emre Kurtoglu</strong>, Kenneth DeHaan, Caroline Kobek Pezzarossi, Darrin J. Griffin, Chris Crawford, and Sevgi Z. Gurbuz, "Interactive Learning of Natural Sign Language with Radar" in <em>IET Radar, Sonar & Navigation</em>, 2024.</p></div>
+                        <div class="publication-item"><p class="text-gray-300"><strong>Emre Kurtoglu</strong>, and Sevgi Z. Gurbuz, "Human-Centered Fully-Adaptive Radar for Gesture Recognition in Smart Environments" in <em>IEEE Transactions on Human-Machine Systems</em>, 2025. (Accepted)</p></div>
                     </div>
 
                     <h3 class="text-xl font-semibold my-6 text-orange-400">Conference Proceedings</h3>
@@ -329,7 +344,9 @@
                         <div class="publication-item"><p class="text-gray-300">Sevgi Z. Gurbuz, Chris Crawford, Darrin J. Griffin, <strong>Emre Kurtoglu</strong>, et al., "Interactive rf game design for deciphering real-world human motion: Activities, gestures, and sign language". In <em>2023 IEEE Radar Conference (RadarConf23)</em>, pages 1-6, 2023.</p></div>
                         <div class="publication-item"><p class="text-gray-300"><strong>Emre Kurtoğlu</strong>, Sultanus Salehin, Moeness G. Amin, Sevgi Z. Gurbuz, "RF sensing of personalized mobility: accounting for temporal variability in ethogram-based classification," <em>Proc. SPIE 13048, Radar Sensor Technology XXVIII</em>, 130480Q (2024).</p></div>
                         <div class="publication-item"><p class="text-gray-300"><strong>E. Kurtoğlu</strong>, M. G. Amin and S. Z. Gurbuz, "Radar Based Joint Human Activity and Agility Recognition via Multi Input Multi-Task Learning," <em>2024 IEEE Radar Conference (RadarConf24)</em>, Denver, CO, USA, 2024, pp. 1-6. (Runner Up Award)</p></div>
-                        <div class="publication-item"><p class="text-gray-300"><strong>Emre Kurtoğlu</strong>, et al. "Ethogram-Based Personalization of Human Activity and Agility from Radar D Signatures." <em>2024 IEEE EMBS International Conference on Biomedical and Health Informatics (BHI)</em> (2024).</p></div>
+                        <div class="publication-item"><p class="text-gray-300"><strong>Emre Kurtoğlu</strong>, et al. "Ethogram-Based Personalization of Human Activity and Agility from Radar micro-Doppler Signatures," <em>2024 IEEE EMBS International Conference on Biomedical and Health Informatics (BHI)</em> (2024).</p></div>
+                        <div class="publication-item"><p class="text-gray-300">Sevgi Z. Gurbuz, and <strong>Emre Kurtoğlu</strong> "Gesture-based Human-in-the-Loop Interaction with Fully-Adaptive Radar," <em>IEEE International Radar Conference (RADAR)</em> (2025).</p></div>
+                        <div class="publication-item"><p class="text-gray-300">Kenneth DeHaan, <strong>Emre Kurtoğlu</strong>, et al. RF-ChessSIGN: Radar-enabled Human-Computer Interaction in a Real-Time Sign Language-Controlled Game," <em>International Conference on Computer Vision (ICCV)</em> (2025). (Under Review)</p></div>
                     </div>
                  </div>
             </section>
@@ -355,6 +372,12 @@
                             <p class="font-semibold text-white">National University Entrance Exam Full Tuition Scholarship</p>
                             <p class="text-gray-400">Gediz University, 2014</p>
                         </div>
+                    </div>
+                    <hr class="orange-separator">
+                    <h2 class="text-2xl font-bold mb-6 text-white">Invited Talks</h2>
+                    <div class="pl-4 border-l-4 border-orange-500">
+                        <p class="font-semibold text-white">UCL Radar Group</p>
+                        <p class="text-gray-400">University College London  (2024)</p>
                     </div>
                 </div>
             </section>
